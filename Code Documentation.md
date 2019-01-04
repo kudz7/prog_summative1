@@ -8,6 +8,11 @@ This will include an explanation of:
 - The example webpage
 
 ## Parameters
+**Base_Speed:** The default speed the stars go to once a key is pressed.
+
 **Speed:** This is essentially how fast each star moves. At the beginning of the code, you can set a 'default' speed for this variable.In order to make the code more interactive, I have included an if statement from pressing the mouse. By holding the mouse down, the speed of each star is increased. If you want the speed to be reset to its 'reset value', simply press any key. A negative speed value makes the stars move backwards. 
 
 **Color:** The color of the stars. Each Star is colored using rbg with a maximum value of 255.
+
+## Methods
+**Draw:** T

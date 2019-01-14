@@ -8,7 +8,7 @@ This will include an explanation of:
 - The example webpage
 
 ## Classes
-**Star:** This is the reusable star component. It encapsulates the parameters: Base_Speed, Speed and Color. It encapsulates the methods: Draw and Update. 'this.x, this.y, this.z' determine the starting position of each individual star, the starting positions are randomly allocated.
+**Star:** This is the reusable star component. It encapsulates the parameters: speed, hor_speed and color. It encapsulates the methods: Draw and Update. 'this.x, this.y, this.z' determine the starting position of each individual star, the starting positions are randomly allocated. It also encapsulates the colour of each star using rbg sliders.
 
 ## Parameters
 

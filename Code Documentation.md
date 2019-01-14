@@ -12,11 +12,11 @@ This will include an explanation of:
 
 ## Parameters
 
-**Speed:** This is essentially how fast each star moves. The vertical velocity of each star is changed by moving the sliders.
+**Speed:** This is essentially how fast each star moves. The vertical velocity of each star is changed by moving the sliders. The default (minimum) value is 0 while the maximum value is 50.
 
-**hor_speed:** The horizontal velocity of each star. Each horizontal can be changed by moving the sliders.
+**hor_speed:** The horizontal velocity of each star. Each horizontal can be changed by moving the sliders. The default (minimum) value is 0 while the maximum value is 50.
 
-**Color:** The color of the stars. Each Star is colored using rbg with a maximum value of 255 for each. Each rbg component can be changed by moving the sliders.
+**Color:** The color of the stars. Each Star is colored using rbg with a maximum value of 255 for each and a minimum value of 0. Each rbg component can be changed by moving the sliders.
 
 ## Methods
 **Update:** This method is what causes the stars to appear to move towards the user through the line `this.z-=speed`. The horizontal velocity is done through `this.x-=hor_speed` When the star reaches the edge of the screen, they are reset to their starting positions:

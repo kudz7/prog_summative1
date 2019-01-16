@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="C:\Users\user\AppData\Local\Temp\atom-119015-16072-17977b0.ga89\p5.zip\p5.dom.js"></script>
+      <div class=total><h1><u><b>Starfield Sketch</b></u></h1>
+  </head>
+<body>
+
+<script src="C:\Users\user\Documents\Programming Summative2.js"></script>
+  <div class="section1"><h2>Instructions</h2>
+  <div class="instructions">
+    <br></br>
+  <ol>
+    <li>The first slider controls the vertical motion of the stars.</li>
+    <li>The second slider controls the horizontal motion of the stars.</li>
+    <li>The maximum value for each velocity component is 50.</li>
+    <li>The third slider controls the red component of the colour of the stars.</li>
+    <li>The fourth slider controls the green component of the colour of the stars.</li>
+    <li>The fifth slider controls the blue component of the colour of the stars.</li>
+    <li>The maximum value for each color component is 255 (rbg).</li>
+  </ol></div></div>
+
+  <div class=section2><h2>Starfield</h2>
+  <div id="sketch-holder">
+  <div class="slidecontainer">
+<div class=slider-container>
+  <p><input type="range" min="0" max="50" value="0" class="slider" id="verticalv"></p>
+  <br></br>
+  <p><input type="range" min="0" max="50" value="0" class="slider" id="horizontalv"></p>
+  <br></br>
+  <p><input type="range" min="0" max="255" value="255" class="slider" id="red"></p>
+  <br></br>
+  <p><input type="range" min="0" max="255" value="255" class="slider" id="green"></p>
+  <br></br>
+  <p><input type="range" min="0" max="255" value="255" class="slider" id="blue"></p></div>
+</div></div></div>
+
+</body></div>
+
+  <style>
+
+  body {
+    background-color: #403075;
+    text-align: justify;
+    padding: 20px;
+    color: #615192;
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  h1 {
+    color: #887CAF;
+    text-align: center;
+
+  }
+  h2 {
+    color: #887CAF;
+    font-family: serif;
+    font-size: 20px;
+  }
+
+  .instructions {
+    background-color: #261758;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    color: #615192;
+    text-align: justify;
+    font-size: 12px;
+
+  }
+
+  .section1{
+    height:500px;
+    float: left;
+    margin: 50px;
+  }
+
+  .total{
+    height:500px;
+  }
+
+  .section2 {
+    height:500px;
+    float: right;
+    margin: 50px
+  }
+
+  #sketch-holder {
+    width: 550px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #261758;
+    position: relative;
+
+  }
+
+  .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #887CAF;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 5px;
+  background: #403075;
+  cursor: pointer;
+}
+
+.slider-container {
+  width: 150px;
+  height: 100px;
+  float: right;
+}
+
+
+  </style>
+</html>

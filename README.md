@@ -1,11 +1,9 @@
 # prog_summative1
-**original code from: https://www.openprocessing.org/sketch/430009**
+**original code from: https://www.openprocessing.org/sketch/398285**
 
 ```
 var stars = []
-var speed =30
-
-;
+var speed = 4;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -20,7 +18,7 @@ function draw() {
     fill(0, 100);
     rect(0, 0, width, height);
     translate(width / 2, height / 2);
-    fill(200);
+    fill(255);
     for (var i = 0; i < stars.length; i++) {
         stars[i].update();
         stars[i].show();

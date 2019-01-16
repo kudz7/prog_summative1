@@ -10,13 +10,12 @@ class Star {
     this.x = random(-width / 2, width / 2);
     this.y = random(-height / 2, height / 2);
     this.z = random(width);
+  }
 
 		// how each individual star moves down the screen
-    this.update = function() {
-			var speed = vslider.value();
-			var hor_speed = hslider.value();
-			var base_hor_speed=0
-			var base_speed=0
+    update(){
+		  var speed = document.getElementById("verticalv").value;
+			var hor_speed = document.getElementById("horizontalv").value;
         this.z -= speed;
 				this.x -= hor_speed;
         if (this.z < 1) {
@@ -32,15 +31,18 @@ class Star {
         }
     }
 // the process of displaying each star
-    this.draw = function() {
+    draw(){
 // to stop the movement of each star and reset their speed to their base value, press any key. Ensure that the speed value here and the speed value at the top are equal.
 
         var sx = map(this.x / this.z, 0, 1, 0, width);
         var sy = map(this.y / this.z, 0, 1, 0, height);
         var r = map(this.z, 0, width, 16, 0);
-				var color = fill(redSlider.value(),greenSlider.value(),blueSlider.value());
+        var red = document.getElementById("red").value;
+        var green = document.getElementById("green").value;
+        var blue = document.getElementById("blue").value;
+				var color = fill(red, green, blue);
         ellipse(sx, sy, r, r,color);
-      }
+
 	}
 
 }
@@ -55,21 +57,6 @@ function setup() {
     canvas.parent('sketch-holder');
     background(0);
     noStroke();
-		vslider = createSlider(0, 50, 0);
-    vslider.parent('sketch-holder');
-    vslider.position(410, 50);
-    hslider = createSlider(0,50,0);
-    hslider.parent('sketch-holder');
-    hslider.position(410, 100);
-    redSlider = createSlider(0, 255, 255);
-    redSlider.parent('sketch-holder');
-    redSlider.position(410, 150);
-    greenSlider = createSlider(0, 255, 255);
-    greenSlider.parent('sketch-holder');
-    greenSlider.position(410, 200);
-    blueSlider = createSlider(0, 255, 255);
-    blueSlider.parent('sketch-holder');
-    blueSlider.position(410, 250);
 	  for (var i = 0; i < 400; i++) {
 		stars[i] = new Star();
     }

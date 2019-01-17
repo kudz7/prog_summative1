@@ -14,8 +14,8 @@ class Star {
 
 		// how each individual star moves down the screen
     update(){
-		  var speed = document.getElementById("verticalv").value;
-			var hor_speed = document.getElementById("horizontalv").value;
+		  var speed = 0
+			var hor_speed = 0
         this.z -= speed;
 				this.x -= hor_speed;
         if (this.z < 1) {
@@ -37,9 +37,9 @@ class Star {
         var sx = map(this.x / this.z, 0, 1, 0, width);
         var sy = map(this.y / this.z, 0, 1, 0, height);
         var r = map(this.z, 0, width, 16, 0);
-        var red = document.getElementById("red").value;
-        var green = document.getElementById("green").value;
-        var blue = document.getElementById("blue").value;
+        var red = 255;
+        var green = 255;
+        var blue = 255;
 				var color = fill(red, green, blue);
         ellipse(sx, sy, r, r,color);
 
